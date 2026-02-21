@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>VOID</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link
+        href="https://fonts.googleapis.com/css2?family=Cormorant:ital,wght@0,200;0,300;1,200;1,300&family=DM+Mono:wght@200;300&display=swap"
+        rel="stylesheet" />
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/three.js/r128/three.min.js"></script>
+    <script src="loader.js" defer></script>
+    <script src="scene.js" defer></script>
+    <script src="script.js" defer></script>
+    <link rel="stylesheet" href="style.css" />
+</head>
+
+<body>
+
+    <!-- 3D canvas (fixed, behind everything) -->
+    <canvas id="c"></canvas>
+
+    <!-- Loader -->
+    <div id="loader">
+        <canvas id="lc"></canvas>
+        <div id="loader-inner">
+            <div id="loader-title">VOID</div>
+            <div id="loader-track">
+                <div id="loader-fill"></div>
+            </div>
+            <div id="loader-n">0<span>%</span></div>
+        </div>
+    </div>
+
+    <!-- HUD -->
+    <div id="hud-left">
+        <div id="hud-prog">
+            <div id="hud-prog-fill"></div>
+        </div>
+    </div>
+    <div id="hud-right">
+        <div id="hud-act-num"></div>
+        <div id="hud-act-name"></div>
+    </div>
+    <div id="hud-bot">scroll to travel</div>
+
+    <!-- Scroll content — 8 acts × 250vh -->
+    <main>
+
+        <section class="act" data-i="0" data-name="Genesis">
+            <div class="txt tl">
+                <em>I</em>
+                <h1>From<br>Nothing</h1>
+                <p>A point.<br>Then everything.</p>
+            </div>
+        </section>
+
+        <section class="act" data-i="1" data-name="Expansion">
+            <div class="txt tr">
+                <em>II</em>
+                <h2>Space<br>Tears</h2>
+                <p>Geometry remembers<br>its first wound.</p>
+            </div>
+        </section>
+
+        <section class="act" data-i="2" data-name="Pulse">
+            <div class="txt tl">
+                <em>III</em>
+                <h2>It<br>Breathes</h2>
+                <p>Organic. Inevitable.<br>Alive.</p>
+            </div>
+        </section>
+
+        <section class="act" data-i="3" data-name="Fracture">
+            <div class="txt tr">
+                <em>IV</em>
+                <h2>Every<br>Edge<br>Breaks</h2>
+                <p>A thousand fragments.<br>One intention.</p>
+            </div>
+        </section>
+
+        <section class="act" data-i="4" data-name="Warp">
+            <div class="txt tc">
+                <em>V</em>
+                <h2>Space<br>Bends</h2>
+                <p>The fabric holds<br>but barely.</p>
+            </div>
+        </section>
+
+        <section class="act" data-i="5" data-name="Collapse">
+            <div class="txt tl">
+                <em>VI</em>
+                <h2>Gravity<br>Wins</h2>
+                <p>All light falls<br>inward forever.</p>
+            </div>
+        </section>
+
+        <section class="act" data-i="6" data-name="Rebirth">
+            <div class="txt tr">
+                <em>VII</em>
+                <h2>Again<br>Again</h2>
+                <p>The loop has<br>no beginning.</p>
+            </div>
+        </section>
+
+        <section class="act" data-i="7" data-name="Infinite">
+            <div class="txt tc">
+                <em>VIII</em>
+                <h2>∞</h2>
+                <p>You were here<br>before you arrived.</p>
+            </div>
+        </section>
+
+    </main>
+
+</body>
+
+</html>
